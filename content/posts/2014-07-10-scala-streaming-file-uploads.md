@@ -1,6 +1,6 @@
 +++
 date = "2014-07-10T10:30:05-05:00"
-draft = true
+draft = false
 title = "Proxied Streaming Uploads with Scala/Play"
 categories = ["play", "scala", "programming"]
 

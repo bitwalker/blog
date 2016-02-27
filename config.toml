@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "https://bitwalker.org"
+baseurl = "http://bitwalker.org/"
 languageCode = "en-us"
 title = "Bitwalker"
 theme = "hugo-cactus-theme"

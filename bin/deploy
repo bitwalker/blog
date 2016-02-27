@@ -1,0 +1,43 @@
+#!/bin/sh
+
+SCRIPT_DIR="$(dirname "$0")"
+PROJECT_DIR="$(cd "$SCRIPT_DIR"/.. && pwd)"
+BUILD_DIR="$PROJECT_DIR/_build"
+DEPLOY_DIR="$PROJECT_DIR/../bitwalker.github.io"
+
+trap "{ cd popd; exit 1; }" HUP INT QUIT KILL TERM
+
+pushd "$DEPLOY_DIR"
+
+git rm -r -f ./ --ignore-unmatch
+exit_status="$?"
+if [ "$exit_status" -ne 0 ]; then
+    popd
+    exit "$exit_status"
+fi
+
+cp -r "$BUILD_DIR/" ./
+exit_status="$?"
+if [ "$exit_status" -ne 0 ]; then
+    popd
+    exit "$exit_status"
+fi
+
+publish_date="$(date "+%Y%m%dT%H%M%S")"
+git add .
+git commit -m "Updated at $publish_date"
+exit_status="$?"
+if [ "$exit_status" -ne 0 ]; then
+    popd
+    exit "$exit_status"
+fi
+
+git push origin master
+exit_status="$?"
+if [ "$exit_status" -ne 0 ]; then
+    popd
+    exit "$exit_status"
+fi
+popd
+
+echo "bitwalker.github.io has been updated!"

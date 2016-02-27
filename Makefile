@@ -7,3 +7,5 @@ build:
 	hugo -d ./_build --theme=cactus
 	cp CNAME ./_build/CNAME
 
+deploy: build
+	/bin/sh ./bin/deploy

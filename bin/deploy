@@ -7,6 +7,10 @@ DEPLOY_DIR="$PROJECT_DIR/../bitwalker.github.io"
 
 trap "{ cd popd; exit 1; }" HUP INT QUIT KILL TERM
 
+if [ ! -d "$DEPLOY_DIR" ]; then
+    git clone git@github.com:bitwalker/bitwalker.github.io "$DEPLOY_DIR"
+fi
+
 pushd "$DEPLOY_DIR"
 
 git rm -r -f ./ --ignore-unmatch

@@ -2,47 +2,46 @@
 baseurl = "http://bitwalker.org/"
 languageCode = "en-us"
 title = "Bitwalker"
-theme = "hugo-cactus-theme"
+theme = "cactus"
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
 # Disable comments by leaving disqusShortname empty
 disqusShortname = ""
 
 [params]
-	name = "Paul Schoenfelder"
-	description = "Stuff about things"
-	bio = "Programmer / Alchemist / Gopher"
-	# Enter optionally your twitter account
-	twitter = "gotbones"
-	enableRSS = true
+  name = "Paul Schoenfelder"
+  description = "Stuff about things"
+  bio = "Programmer / Alchemist / Gopher"
+  # Enter optionally your twitter account
+  twitter = "gotbones"
+  enableRSS = true
 
-	# The variables below are optionally too and can be used to
-	# translate or customize each string of the theme.
+  # The variables below are optionally too and can be used to
+  # translate or customize each string of the theme.
 
-	# Navigation links
-	home = ""
-	#about = ""
-	subscribe = ""
-	# Pagination links
-	olderPosts = ""
-	newerPosts = ""
-	readMore = ""
-	copyright = "2016 Paul Schoenfelder"
-	# Sharing options and author information in posts
-	aboutAuthor = "I love programming and technology"
-	tweet = ""
-	share = ""
-	# 404 page
-	title404 = "Oops"
-	subtitle404 = "This page doesn't exist"
+  # Navigation links
+  home = ""
+  #about = ""
+  subscribe = ""
+  # Pagination links
+  olderPosts = ""
+  newerPosts = ""
+  readMore = ""
+  copyright = "2016 Paul Schoenfelder"
+  # Sharing options and author information in posts
+  aboutAuthor = "All hail our Erlang overlords"
+  tweet = ""
+  share = ""
+  # 404 page
+  title404 = "Oops"
+  subtitle404 = "This page doesn't exist"
 
-    # Social icons style - circle, rounded, or empty
-    socialIconStyle = "circle"
+  # Social icons style - circle, rounded, or empty
+  socialIconStyle = "circle"
 
 # Add additional social link entries underneath
 [social]
-    twitter  = "https://twitter.com/gotbones"
-    facebook = ""
-    github   = "https://github.com/bitwalker"
-    dribble  = ""
-
+  twitter  = "https://twitter.com/gotbones"
+  facebook = ""
+  github   = "https://github.com/bitwalker"
+  dribble  = ""

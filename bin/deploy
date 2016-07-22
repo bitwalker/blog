@@ -20,7 +20,7 @@ if [ "$exit_status" -ne 0 ]; then
     exit "$exit_status"
 fi
 
-cp -r "$BUILD_DIR/" ./
+cp -R "$BUILD_DIR"/* ./
 exit_status="$?"
 if [ "$exit_status" -ne 0 ]; then
     popd

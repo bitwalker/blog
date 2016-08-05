@@ -190,6 +190,7 @@ li	{ list-style-type:circle; list-style-position:inside; }
 
 /* Line Height */
 #post-body, p { line-height:1.7; font-weight: 300; }
+#post-body > ul { margin-bottom: 20px; padding-left: 20px; }
 
 b, strong { font-weight: 500;
   color: #1E2025; }
@@ -317,16 +318,27 @@ span.code {
     font-size:14px; 
 }
 
+code {
+    font-family: Fantasque Sans Mono, Menlo, Monaco, "Consolas", Courier, monospace;
+    background-color:rgba(47,30,46,0.1);
+    padding: 5px;
+    font-size:14px;
+    /*color: #d0d4d7;*/
+    color: rgba(0,0,0,0.5);
+    border-radius: 3px;
+}
+
 pre	{
     font-family: Fantasque Sans Mono, Menlo, Monaco, "Consolas", Courier, monospace;
 	white-space:pre-wrap;
 	/*border: 1px solid #ddd;*/
 	padding:20px;
-	background-color:#fdfdfd;
+  /*background-color:#fdfdfd;*/
+  background-color:#2f1e2e;
 	/*font-size:14px;*/
 	overflow:auto;
 	border-radius: 3px;
-	background: #272b2d;
+  /*background: #272b2d;*/
     font-size: 13px;
 	line-height: 1.5em;
 	font-weight: 500;

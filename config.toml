@@ -4,7 +4,7 @@ languageCode = "en-us"
 title = "Bitwalker"
 theme = "cactus"
 # Enter your tracking code to enable Google Analytics
-googleAnalytics = ""
+googleAnalytics = "UA-41198216-1"
 # Disable comments by leaving disqusShortname empty
 disqusShortname = ""
 
